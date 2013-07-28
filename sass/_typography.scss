@@ -1,0 +1,136 @@
+/* -----------------------------------------
+   Droid Sans
+----------------------------------------- */
+
+.light { font-weight: 200 !important; }
+.extra-bold { font-weight: 800 !important; }
+.regular { font-weight: normal !important; }
+
+
+@mixin font-stack-social-icons {
+    font-family: 'social-icons';
+}
+@font-face {
+    font-family: 'social-icons';
+    src: url('../fonts/entypo-social.eot');
+    src: url('../fonts/entypo-social.eot?iefix') format('eot'),
+         url('../fonts/entypo-social.svg#webfontZam02nTh') format('svg'),
+         url('../fonts/entypo-social.woff') format('woff'),
+         url('../fonts/entypo-social.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@mixin font-stack-entypo {
+    font-family: 'entypo';
+}
+@font-face {
+    font-family: 'entypo';
+    src: url('../fonts/entypoeot');
+    src: url('../fonts/entypo.eot?iefix') format('eot'),
+         url('../fonts/entypo.svg#webfontZam02nTh') format('svg'),
+         url('../fonts/entypo.woff') format('woff'),
+         url('../fonts/entypo.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+/* Regular */
+
+body {
+	-webkit-font-smoothing: antialiased;
+}
+
+h1, h2, h3, h4, h5 {
+	font-family: 'Droid Sans', sans-serif;
+	font-weight: normal;
+	-webkit-font-smoothing: antialiased;
+	color: #154079;
+	} 
+
+@mixin font-stack-droid { 
+	font-family: 'Droid Sans', sans-serif;
+
+}
+
+// -------------------------------  Section Text
+
+.small-centered-title {
+	text-align: center;
+	margin: 0 auto;
+}
+.content-header {
+	padding-top: 61px !important;
+}
+
+.intro-text {
+	text-align: center;
+	margin: 0 auto;
+	-webkit-font-smoothing: antialiased;
+	}
+	h2.intro-text {
+		max-width: 70%;
+		margin-bottom: 20px;
+		color: #154079;
+		padding-top: 87px;
+		&.cta-bottom {
+			padding-top: 22px !important;
+		}
+		@media only screen and (max-width: 767px) {
+			max-width: 100%;
+
+		}
+	}
+	h1.intro-text {
+		margin-top: 40px;
+		margin-bottom: 20px;
+	}
+p {
+	color: #545454;
+	font-size: 16px;
+	&.intro-text {
+		max-width: 70%;
+		margin-bottom: 50px;
+		font-size: 20px;
+		color: #98999b;
+		font-weight: 400;
+	@media only screen and (max-width: 767px) {
+		max-width: 100%;
+		}	
+
+	}
+
+}
+
+.home-section {
+	margin-top: 30px;
+}
+
+@media only screen and (max-width: 767px) {
+		h2.intro-text {
+		margin-top: 20px;
+		padding-top: 10px;
+		}
+		p.intro-text {
+			margin-bottom: 20px;
+			line-height: 25px;
+		}
+		.content-header {
+			padding-top: 10px !important;
+		}
+}	
+
+.mobile-spacing {
+	@media only screen and (max-width: 767px) {
+	padding-top: 20px;
+	}
+}
+
+.mobile-spacing-2 {
+	@media only screen and (max-width: 767px) {
+	padding-top: 40px;
+	}
+}
+
+
